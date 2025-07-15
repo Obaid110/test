@@ -10,7 +10,7 @@ app = Flask(__name__)
 SCOPES = ['https://www.googleapis.com/auth/drive.file']
 
 # Load service account credentials
-SERVICE_ACCOUNT_FILE = 'service_account.json'  # Make sure this file is in your project root
+SERVICE_ACCOUNT_FILE = 'credentials.json'  # Make sure this file is in your project root
 
 def get_drive_service():
     credentials = service_account.Credentials.from_service_account_file(
